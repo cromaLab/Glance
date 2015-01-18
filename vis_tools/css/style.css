@@ -1,0 +1,15 @@
+#sessionSelector {
+  width: 150px;
+}
+
+#clipIdxSelector {
+  width: 25px;
+}
+
+#notes {
+  clear: both;
+}
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,147 @@
+body {
+  margin: 3px;
+}
+
+#slider-container {
+  padding-left: 45px;
+}
+
+.slider {
+  width: 640px;
+  padding-bottom: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background: #EEE;
+  /*margin-left: 100px;*/
+  margin-bottom:15px;
+}
+
+.slider.inactive {
+  border: 1px solid #999;
+  background: #FFF;
+  color: #999;
+}
+
+.ui-slider {
+  width: 640px;
+}
+
+.slider .ui-slider-handle {
+  color: #0A0;
+  background: #0A0;
+  border-color: #080;
+}
+
+.ui-widget-content {
+  background: #EEF;
+}
+
+.ui-slider-range {
+  background: #FF1;
+}
+
+.time-label {
+  background: #EEE;
+  border: 0;
+  color: #f6931f;
+  font-weight: bold;
+}
+
+.time-label.inactive {
+  background: #FFF;
+  color: #999;
+  font-weight: normal;
+}
+
+#instruction_link {
+	width: 200px;
+	border: 2px solid #000000; /*black border*/
+    	background: #4479BA;
+    	color: #FFF;
+	text-decoration: none; /*No underline*/
+	padding: 3px 6px;
+    	font-family:"Arial";
+    	float:right;
+}
+
+.content {
+    font-family:"Arial";
+    font-size:12pt;
+    width: 500px;
+}
+
+#instructions_section {
+	border: 1px solid #C0C0C0; /*black border*/
+	padding: 1px 15px 0px;
+	width: 740px;
+}
+
+#instructions_header {
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom: 2px;
+}
+
+h3 {
+	/*position:absolute;*/
+}
+
+#videoPlayer {
+	padding: 10px 0px 0px 0px;
+}
+
+ul {
+	font-family:"Arial";
+	font-size:12pt;
+}
+#playTime {
+	font-family:"Arial";
+	font-size:12pt;
+}
+
+#controls {
+	margin-left: 55px;
+	width: 250px;
+	line-height: 32px;
+}
+
+#setStart {
+	margin-left: 52px;
+}
+
+input[name="toggle"] {
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+#set-buttons {
+	width: 695px;
+}
+
+#setStart {
+	margin-left: 200px;
+}
+
+#setEnd {
+	float: right;
+	margin-right: 200px;
+}
+
+.confidence-header {
+	margin-top: 5px;
+}
+
+.removeButton{
+  float: right;
+  font-family: Tahoma,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  font-style: normal;
+  color: #888;
+  margin-left:-12px;
+  margin-right: 5px;
+
+}

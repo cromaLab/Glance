@@ -1,0 +1,13 @@
+sitStand2 2
+mood1Baseline 1
+mood1Baseline 4
+mood2Baseline 0
+designEyeContactBaseline 0
+designEyeContactBaseline 1
+designEyeContactBaseline 2
+designEyeContactBaseline 3
+designEyeContactBaseline2 0
+designEyeContactBaseline2 1
+designEyeContactBaseline2 2
+designEyeContactBaseline2 3
+eyeContact2 3 // should return no segments but crashes

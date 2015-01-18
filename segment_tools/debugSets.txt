@@ -1,0 +1,8 @@
+fullHandGesture1x
+fullHandGesture2x
+fullHandGesture5x
+fullHandGesture10x
+rabbitHandGesture1x
+rabbitHandGesture2x
+rabbitHandGesture5x
+rabbitHandGesture10x

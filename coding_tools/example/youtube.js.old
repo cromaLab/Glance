@@ -1,0 +1,166 @@
+
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      var currentTimeLeft = 0;
+      var currentTimeRight = 0;
+
+      var isScrolling = false; //used to prevent slider from snapping back and forth between old and new times
+      
+      $( "#timeSlider" ).slider({ //initializes the playback slider. The range of this slider is from the start time to the end time.
+        step: .1,
+        min: startTime,
+        max: endTime,
+        value: startTime,
+        start: function( event, ui ) {startSliderChange(ui)},
+        stop: function( event, ui ) {stopSliderChange(ui)}
+        //slide: function( event, ui ) {slidingSliderChange(ui)}
+      }); 
+      var timeSliderVar;
+
+      tag.src = "http://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: vidId,
+          playerVars: {
+            'controls': '0',
+            'start': startTime,
+            'end': endTime,
+            'showinfo': '0',
+            'modestbranding': '1',
+            'rel': '0'
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        //event.target.playVideo();
+        startTimeSlider();
+      }
+
+      function onPlayerStateChange(event){
+        if(event.data == YT.PlayerState.PLAYING){
+          $("#play").html("Pause");
+          if(isScrolling){
+            startTimeSlider();
+            isScrolling = false;
+          }
+        }
+        else if(event.data == YT.PlayerState.PAUSED){
+          $("#play").html("Play");
+        }
+        else if(event.data == YT.PlayerState.ENDED){
+          $("#continue").removeAttr("DISABLED"); //enables continue button if video has ended
+          $("#continue").attr("value", "Continue"); //enables continue button if video has ended
+        }
+      }
+
+      $("#play").on("click", function(event){ //controls the play/pause button
+        if(player.getPlayerState() == 1){
+          player.pauseVideo();
+        }
+        else{
+          player.playVideo();
+        }
+      });
+
+
+      var timeSliderVar;
+      var timeTextVar;
+      function startTimeSlider(){
+        timeSliderVar = setInterval(function(){
+          $( "#timeSlider" ).slider( "option", "value", player.getCurrentTime());
+        }, 100);
+        timeTextVar = setInterval(function(){
+          $("#playTime").html((Math.round(10 * (player.getCurrentTime() - startTime)) / 10).toFixed(1) + "/" + (endTime - startTime));
+        }, 100);
+      }
+
+      function startSliderChange(ui){
+        clearInterval(timeSliderVar);
+        clearInterval(timeTextVar);
+        isScrolling = true;
+        timeTextVar = setInterval(function(){
+          $("#playTime").html((Math.round(10 * ($( "#timeSlider" ).slider( "option", "value" ) - startTime))/10).toFixed(1) + "/" + (endTime - startTime));
+        }, 100);
+      }
+
+      function stopSliderChange(ui){
+        clearInterval(timeTextVar);
+        player.seekTo(ui.value);
+      }
+
+      // function slidingSliderChange(ui){
+      //   player.seekTo(ui.value, false);
+      // }
+
+    $(document).ready(function(){
+    	
+      $("#setStart").on('click', function(){
+        currentTimeLeft = player.getCurrentTime();
+        if( activeBarID != 0 )
+        {
+        	var val_bar = $( "#slider-range" + activeBarID ).slider( "option" , "values");
+        	var set_left = val_bar[0];
+        	var set_right = val_bar[1];
+        	//alert("left is" + set_left);
+        	//alert("right is" + set_right);
+			$( "#slider-range" + activeBarID ).slider( "values", 0, currentTimeLeft );
+			//alert("time is" + currentTimeLeft);
+			//alert(val.length);
+			
+			val[(2*activeBarID)] = val_bar[0]; //fills array with values
+			val[(2*activeBarID)+1] = val_bar[1];
+			//alert(val.join('\n'));
+			
+        	if((currentTimeLeft < a) || (currentTimeLeft > set_right)) //sets left marker to inital position if it adheres to one of two conditions: past the end marker on it's bar, or behind the end on the previos bar 
+        	{
+        		alert("time is (in the if)" + currentTimeLeft);
+        		$( "#slider-range" + activeBarID ).slider( "values", 0, set_left );
+        		val[(2*activeBarID)] = set_left;
+        		alert(val.join('\n'));
+        	}
+        }
+        else
+        {
+        	var val_bar = $( "#slider-range" + activeBarID ).slider( "option" , "values");
+        	var set_left = val_bar[0];
+        	var set_right = val_bar[1];
+        	//alert("left is" + set_left);
+        	//alert("right is" + set_right);
+			$( "#slider-range" + activeBarID ).slider( "values", 0, currentTimeLeft );
+			//alert("time is" + currentTimeLeft);
+			
+			val[(2*activeBarID)] = val_bar[0]; //fills array with values
+			val[(2*activeBarID)+1] = val_bar[1];
+			//alert(val.join('\n'));
+			
+        	if((currentTimeLeft < startTime) || (currentTimeLeft > set_right))
+        	{
+        		alert("time is (in the if)" + currentTimeLeft);
+        		$( "#slider-range" + activeBarID ).slider( "values", 0, set_left );
+        		val[(2*activeBarID)] = set_left;
+        		alert(val.join('\n'));
+        	}
+        }
+      });
+
+      $('#setEnd').on('click', function(){
+        currentTimeRight = player.getCurrentTime();
+		    $( "#slider-range" + activeBarID  ).slider( "values", 1, currentTimeRight );
+      });
+
+    });

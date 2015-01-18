@@ -1,0 +1,77 @@
+#slider-container {
+	margin-left: 10px;
+	margin-bottom: 5px;
+	margin-top: 30px;
+	/*float:left;*/
+}
+.slider {
+	width: 99%;
+	/*padding: 5px;*/
+  /*margin-left: 15px;*/
+  /*padding-right: 15px;*/
+	border: 1px solid #000;
+	border-radius: 10px;
+	background: #EEE;
+	/*margin-left: 100px;*/
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.slider.inactive {
+	border: 1px solid #999;
+	background: #FFF;
+	color: #999;
+}
+.ui-slider {
+}
+.slider .ui-slider-handle {
+	color: #0A0;
+	background: #0A0;
+	border-color: #080;
+}
+.ui-widget-content {
+	background: #EEF;
+}
+.ui-slider-range {
+	background: #FF1;
+}
+.time-label {
+	background: #EEE;
+	border: 0;
+	color: #f6931f;
+	font-weight: bold;
+	padding-bottom: 2px;
+}
+.time-label.inactive {
+	background: #FFF;
+	color: #999;
+	font-weight: normal;
+}
+#instruction_link {
+	width: 200px;
+	border: 2px solid #000000; /*black border*/
+	background: #4479BA;
+	color: #FFF;
+	text-decoration: none; /*No underline*/
+	padding: 3px 6px;
+	font-family: "Arial";
+	float: right;
+}
+.content {
+	font-family: "Arial";
+	font-size: 12pt;
+	width: 500px;
+}
+#instructions_section {
+	border: 1px solid #C0C0C0; /*black border*/
+	padding: 1px 15px 30px;
+	width: 740px;
+}
+h3 {
+/*position:absolute;*/
+}
+ul {
+	font-family: "Arial";
+	font-size: 12pt;
+}

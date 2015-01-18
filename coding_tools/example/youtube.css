@@ -1,0 +1,21 @@
+#play {
+	float:left;
+	width:50px;
+	margin-right:5px;
+}
+
+#player {
+  padding-left: 115px;
+}
+
+#playTime {
+	float:left;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+#timeSlider {
+	float:left;
+	width: 640px;
+	margin-left:10px;
+}

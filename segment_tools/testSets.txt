@@ -1,0 +1,32 @@
+eyeContact1 0
+eyeContact1 1
+eyeContact1 2
+eyeContact1 3
+eyeContact1 4
+eyeContact2 0
+eyeContact2 1
+eyeContact2 2
+eyeContact2 3
+eyeContact2 4
+sitStand1
+sitStand2
+arguing1
+arguing2
+mood1
+mood2
+designEyeContact
+designFocus
+designPositively
+designExcitement
+fullHandGesture1x
+fullHandGesture2x
+fullHandGesture5x
+fullHandGesture10x
+rabbitHandGesture1x
+rabbitHandGesture2x
+rabbitHandGesture5x
+rabbitHandGesture10x
+dateTalkingRabbit
+dateLaughFull
+dateNodFull
+datePhoneRabbit

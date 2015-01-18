@@ -1,0 +1,217 @@
+body {
+	font-family: sans-serif;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.page {
+	float: left;
+	width: 100%;
+}
+.page-center-container {
+	margin: auto;
+	width: 100%;
+}
+#play {
+	
+	margin-right: 2px;
+	font-size: 12px;
+	width: 30px;
+	height: 30px;
+}
+#controls-border {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #AAA;
+	border-radius: 3px;
+}
+#player {
+}
+#playTime {
+	font-size: 12pt;
+	padding: 5px;
+}
+#timeSlider {
+	float: left;
+	width: 97.75%;
+	/*	margin-left:40px;
+*/	margin-top: 8px;
+	margin-right: 0px;
+	margin-left: 15px;
+}
+#instructions {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #AAA;
+	border-radius: 3px;
+	padding: 5px;
+	width: 640px;
+	height: 105px;
+	margin-top: 10px;
+	padding-top: 25px
+}
+#controls {
+	/*background-color:gray;*/
+	width: 755;
+	height: 30px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	border-radius: 5px;
+}
+#loadVideo {
+/*font-size: 20px;*/
+	/*white-space: nowrap;*/
+}
+.marging-top {
+	margin-top: 10px;
+}
+#videoURL {
+	width: 100%;/*height: 25px;*//*font-size: 20px;*/
+}
+#loadVideoButton {
+/*font-size: 20px;*/
+	/*height: 25px;*/
+}
+#labelForTrial {
+	margin-left: 20px;
+}
+#col1 {
+	display: inline-block;
+	vertical-align: text-top;
+	margin-top: -10px;
+}
+#col2 {
+	padding-left: 20px;
+	display: inline-block;
+	vertical-align: text-top;
+}
+#labels {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #AAA;
+	border-radius: 3px;
+	width: 434px;
+	height: 335px;
+}
+#labelControls {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #AAA;
+	border-radius: 3px;
+	width: 434px;
+	height: 100px;
+	margin-top: 10px;
+}
+#getLabelsButton {
+	margin-top: 10px;
+	font-size: large;/*width:100px;*//*height:50px;*/
+}
+#container {
+	white-space: nowrap;
+	margin-top: -10px;
+}
+.focused {
+	background: #abcdef;
+}
+#tabs {
+	overflow: auto;
+}
+.sessionButton {
+	width: 434px;/*background: yellow !important;*/
+}
+.sessionCheckbox {
+	text-align: right;
+}
+#cancelQueryButton {
+	width: 160px;
+	background: rgb(202, 60, 60) !important;
+	color: white;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.buttonIsActive {
+	border: 2px solid blue !important;
+}
+#action {
+	width: 100%;
+}
+#description {
+	width: 100%;
+}
+#sessionOverride {
+	width: 100%;
+}
+.margin-right-zero {
+	padding-right: 2px !important;
+}
+.margin-left-70 {
+	margin-left: 75px;
+}
+.height-390 {
+	min-height: 400px !important;
+}
+.margin-top-160 {
+	margin-top: 70px;
+}
+.play-dimenstions {
+	width: 130px !important;
+	height: 45px !important;
+	text-align: center !important;
+}
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon {
+	margin-top: -8px !important;
+	position: absolute !important;
+	top: 50% !important;
+	margin-left: 50px;
+}
+.padding-bottom-12 {
+	margin-bottom: 16px !important;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+.padding-bottom {
+	padding-bottom: 20px;
+}
+.left_text_width {
+	width: 100px;
+}
+.icon-remove {
+	cursor: pointer;
+}
+.absolute-content {
+	width: 100%;
+	height: 60px;
+	position: absolute
+}
+.iframe_style {
+	border: 1px solid #CCC;
+}
+.iframe_style_new {
+	border: 3px solid #999;
+	padding-left: 10px;
+}
+#bars_maker {
+	list-style: none;
+	list-style-image: none;
+}
+.paddingnone {
+	padding: 0px 0px 0px 0px !important;
+}
+.center-align {
+	margin: auto !important;
+}
+.helper_with {
+	width: 100%;
+	float: left;
+}
+.margin-auto_helper {
+	margin: auto;
+	width: 80px;
+}
+.left-align-set {
+	float: left;
+	margin-left: 40%;
+}
+#saveExampleButton{
+	margin-top: 10px;	
+}

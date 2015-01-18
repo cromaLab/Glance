@@ -1,0 +1,55 @@
+.clipSpan {
+  background: #eee;
+  float: left;
+  margin-right: 1px;
+  position: relative;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.clipSpan:hover {
+  background: #bbb;
+}
+
+.clipLabel {
+  color: #22A;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.segMarker {
+  height: 8px;
+  margin-bottom: 1px;
+  position: absolute;
+  float: left;
+}
+
+.thin {
+  height: 5px;
+}
+
+.statSection {
+  width: 425px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  float: left;
+}
+
+.statEntry {
+}
+
+#exp-container {
+  clear: both;
+  position: relative;
+  padding-top: 10px;
+}
+
+.exp-elem {
+  float: left;
+}
+
+.curExp {
+  background: #bbb;
+}

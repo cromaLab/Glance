@@ -1,0 +1,89 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Crowd Coding</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="css/youtube.css" />
+  <link rel="stylesheet" href="css/bar.css" />
+  <link rel="stylesheet" href="css/button2.css" />
+  <link rel="stylesheet" href="https://roc.cs.rochester.edu/LegionJS/LegionTools/LegionJS_Libraries/legion.css" />
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="scripts/vars.js"></script>
+  <script src="https://roc.cs.rochester.edu/LegionJS/LegionTools/LegionJS_Libraries/legion.js"></script>
+  <script src="scripts/gup.js"></script>
+
+  <script src="scripts/logVisited.js"></script>
+
+  <!--link rel="stylesheet" href="/resources/demos/style.css" /-->
+
+</head>
+
+<body>
+<div id="instructions_section">
+		
+		<div class="expand"><a href="#" id="instruction_link">Click to hide instructions!</a></div>
+<div id="instructions_header">Instructions</div> 
+		<div class="content">
+			<p> Mark each time you see <strong id = "action"></strong> in the video.</p>
+			<!--p> You can rewind at any time to re-watch for events.</p-->
+			<!--p> If there are no events at all, hit <strong> SUBMIT </strong> once the video is finished.</p-->
+			<p>Mark each event by clicking the green button when it begins.</p>
+      <p>Be as acurate as you can be. Your results will be checked for accuracy. If the video is blurry, please do not worry and just give it your best shot.</p>
+      <p>If the event does not occur, submit without marking any events.</p>
+
+			<p><u>Description of Event:</u> <span id ="description"></span>.</p> 
+		</div>
+</div>
+
+<!-- <h1>Try your best to remember the man's face from this video! You will be asked to select this video's participant out of a police style lineup.</h1> -->
+
+<div id="videoPlayer">
+<div id="player"></div>
+	<div id = "controls">
+		<a class="button" id="play">
+			<span id ="but_swi" class="_play">Play</span>
+		</a>
+		<div style="float:right;"> seconds</div>
+		<div id="playTime">0</div>
+		<div id="timeSlider"></div>
+	</div>
+	<script src="scripts/youtube.js"></script>
+</div>
+	<br/>
+	<div id="set-buttons">
+		<a class="button" data-state="setStart" id ="toggleButton">Set Start</a>
+<!-- 		<a class="button" id ="setEnd">Set End</a>
+ -->	</div>
+		<br/>
+<div id="slider-container"></div>
+<!-- <button id ="addbar">Add a Bar (Enables if all bars are greyed out)</button> -->
+
+<!-- <a class="button" id ="complete">SUBMIT</a> -->
+
+
+<!--button id ="testb">Test</button-->
+
+<!-- LegionJS -->
+  <div id="instructions"></div>
+<!-- End LegionJS -->
+
+
+  <script src="scripts/firstbar.js"></script>
+  <script src="scripts/barappend.js"></script>
+  <script src="scripts/logging.js"></script>
+  <script src="scripts/submitBehavior.js"></script>
+  <script src="scripts/instructions.js"></script>
+  
+  <script> var whatPageIsThis = "coding";</script>
+
+
+  <p id='legion-money' style="display:none;">.15</p>
+
+ 
+</body>
+</html>
+</body>
+</html>
