@@ -14,3 +14,7 @@
 6. Click "get labels".
 7. Send Mechanical Turk workers to the first link at the center of the page. We reccommend using [LegionTools](https://github.com/RocHCI/LegionTools) to recruit workers.
 8. To view and download results, click the second link at the center of the page.
+
+# Authors
+* [Mitchell Gordon](http://mgordon.me/ "Mitchell Gordon")
+* [Walter S. Lasecki](http://wslasecki.com/ "Walter S. Lasecki")
