@@ -2,7 +2,7 @@
 
 ## Installation Instructions
 1. Clone this repo to your web server with MySQL and PHP installed.
-2. Set up your MySQL database using the provided `schema.sql` file. `mysql -u uUSERNAME -pPASSWORD < schema.sql`
+2. Set up your MySQL database using the provided `schema.sql` file. `mysql -u [USERNAME] -p[PASSWORD] < schema.sql`
 3. Update `getDB.php` with your MySQL username and password.
 
 ## Usage Instructions
