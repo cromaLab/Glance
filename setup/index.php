@@ -88,7 +88,7 @@
           <div id="player"></div>
         </div>
       </div>
-      Note: results are not real-time.
+      Note: results are not real-time. </br>
       Send workers to: <a href="url" style="font-size:11px;" id="urlToSendWorkers"></a></br>
       For more detailed results: <a href="url" style="font-size:11px;" id="visToolUrl"></a>
     </div>
